@@ -41,8 +41,7 @@ def fetch_playlist_tracks(playlist_id):
             "translated_lyrics": None
         }
         songs.append(song_info)
-    return songs ## ! request timed out. 
-##TODO handle lot of songs
+    return songs
 
 def fetch_lyrics(song_name, artist_name):
     # Fetch lyrics from Genius
