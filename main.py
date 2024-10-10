@@ -58,7 +58,7 @@ def translate_lyrics(lyrics):
     try:
         translation = translator.translate(lyrics_modified, dest='en')
     except Exception as e:
-        error = "An error occurred during translation:", str(e)
+        error = f"An error occurred during translation: {str(e)}"
         print(error)
         return error
     return translation.text
